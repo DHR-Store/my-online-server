@@ -12,15 +12,14 @@
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
-<<<<<<< HEAD
+
     "express": "^5.1.0",
     "mongoose": "^8.17.1"
   }
-=======
+
     "express": "^5.1.0"
   },
   "engines": {
   "node": "20.x"
 }
->>>>>>> a589e82aab2bd6c77004956d747a89503835d5e5
 }
