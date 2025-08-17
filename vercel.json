@@ -2,7 +2,11 @@
 {
   "version": 2,
   
+<<<<<<< HEAD
   
+=======
+ 
+>>>>>>> 914ad8416e3c7afc265c2b615640660c8035a8d6
   "builds": [
     {
       "src": "server.js",
