@@ -1,18 +1,19 @@
 {
   "version": 2,
   
-  
+  // यह खंड Vercel को बताता है कि server.js एक Node.js सर्वरलेस फ़ंक्शन है
+  // क्योंकि यह रूट फ़ोल्डर में है, पाथ केवल 'server.js' होगा
   "functions": {
     "server.js": {
-      "runtime": "node.js18.x" 
+      "runtime": "@vercel/node@18.15.0" // Node.js के लिए सही Vercel रनटाइम
     }
   },
 
-
+  // यह खंड सभी इनकमिंग रिक्वेस्ट्स को सीधे आपके server.js फ़ंक्शन पर रीडायरेक्ट करता है
   "routes": [
     {
-      "src": "/(.*)", 
-      "dest": "/server.js" 
+      "src": "/(.*)", // यह सभी URL पाथ को मैच करता है
+      "dest": "/server.js" // यह रिक्वेस्ट को रूट में मौजूद server.js पर भेजता है
     }
   ]
 }
